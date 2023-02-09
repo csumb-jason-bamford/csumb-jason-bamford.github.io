@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>car survey</title>
+</head>
+<body>
+   <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Car Survey</h1>
+        <p id="description" class="description text-center">
+          questions about cars
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="age"
+          />
+        </div>
+        <div class="form-group">
+          <p>what style is your current car</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select car style</option>
+            <option value="student">sedan</option>
+            <option value="job">truck</option>
+            <option value="learner">coupe</option>
+            <option value="preferNo">suv</option>
+            <option value="other">wagon</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>do you enjoy driving?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />always</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />occasionally</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />never</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>what country cars do you prefer</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select a country</option>
+            <option value="american">american</option>
+            <option value="japanese">japanese</option>
+            <option value="german">german</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            what features do you want in a car?
+            <span class="clue">(check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="luxury-features"
+              type="checkbox"
+              class="input-checkbox"
+            />luxury features</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="fast-acceleration"
+              type="checkbox"
+              class="input-checkbox"
+            />fast acceleration</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="good-handling"
+              type="checkbox"
+              class="input-checkbox"
+            />good handling</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="comfortable-ride"
+              type="checkbox"
+              class="input-checkbox"
+            />comfortable ride</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="low-to-the-ground"
+              type="checkbox"
+              class="input-checkbox"
+            />low to the ground</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="lifted-above-other-cars"
+              type="checkbox"
+              class="input-checkbox"
+            />lifted above other cars</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="good-audio-system"
+              type="checkbox"
+              class="input-checkbox"
+            />good audio system</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="loud-exhaust"
+              type="checkbox"
+              class="input-checkbox"
+            />loud exhaust</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forced-induction"
+              type="checkbox"
+              class="input-checkbox"
+            />forced induction</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="modern"
+              type="checkbox"
+              class="input-checkbox"
+            />modern</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="classic"
+              type="checkbox"
+              class="input-checkbox"
+            />classic</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>do you have a dream car?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="type here"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
