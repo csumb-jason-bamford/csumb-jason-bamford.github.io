@@ -3,240 +3,63 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width">
-   <title>car survey</title>
-<style id="jsbin-css">
-h1 {
-  color: black 
-}
-body {
-  
-  background-image: url("https://images.unsplash.com/photo-1616361986889-3a182ffc7a23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aXBob25lJTIwY2FyfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-  background-size: cover; 
-  color: white;
- }
-
-label {
-  color: #add8e6;
-}
-button {
-  color: blue;
-}
-div {
-  background: rgba(0, 0, 0, 0.2);
-    
-}
-</style>
+   <title> lab 1</title>
+   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-   <div class="container">
-      <header class="header">
-        <h1 id="title" class="text-center">Car Survey</h1>
-        <p id="description" class="description text-center">
-          questions about cars
-        </p>
-      </header>
-      <form id="survey-form">
-        <div class="form-group">
-          <label id="name-label" for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-control"
-            placeholder="name"
-            required
-          >
-        </div>
-        <div class="form-group">
-          <label id="email-label" for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="email"
-            required
-          >
-        </div>
-        <div class="form-group">
-          <label id="number-label" for="number"
-            >Age<span class="clue">(optional)</span></label
-          >
-          <input
-            type="number"
-            name="age"
-            id="number"
-            min="10"
-            max="99"
-            class="form-control"
-            placeholder="age"
-          >
-        </div>
-        <div class="form-group">
-          <p>what style is your current car</p>
-          <select id="dropdown" name="role" class="form-control" required>
-            <option disabled selected value>Select car style</option>
-            <option value="student">sedan</option>
-            <option value="job">truck</option>
-            <option value="learner">coupe</option>
-            <option value="preferNo">suv</option>
-            <option value="other">wagon</option>
-          </select>
-        </div>
+   <main>
+      <h1>cars</h1>
+      <h2>cool car photos</h2>
+       <figure>
+    <img width="400" src="https://s3.us-east-2.amazonaws.com/prod.mm.com/img/articles/supplementary/datgrass_image001.jpg"
+         alt="240z">
+    <figcaption> <strong>datsun 240z</strong> </figcaption>
+</figure>
+      <p>more <a href='https://www.google.com/search?q=station+wagons&tbm=isch&ved=2ahUKEwjosLHW1vX8AhXAPkQIHRRZAN4Q2-cCegQIABAA&oq=station+wagons&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BAgAEEM6BggAEAcQHlCuE1joHWD_HmgAcAB4AIABWogB8gSSAQE5mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=phDbY-jFDcD9kPIPlLKB8A0&bih=677&biw=880&rlz=1C5MACD_enUS1017US1035&hl=en'>car photos</a> </p>
 
-        <div class="form-group">
-          <p>do you enjoy driving?</p>
-          <label>
-            <input
-              name="user-recommend"
-              value="definitely"
-              type="radio"
-              class="input-radio"
-              checked
-            >always</label
-          >
-          <label>
-            <input
-              name="user-recommend"
-              value="maybe"
-              type="radio"
-              class="input-radio"
-            >occasionally</label
-          >
+      <img width="400" src="https://images.pistonheads.com/nimg/45512/27555-AudiUK00022790AudiRS2Avant1996.jpg" alt="audi rs2">
+      <h3> <em> car lists </em> </h3>
+     <p>4 best car companies</p>
+<ol>
+  <li>toyota</li>
+  <li>porsche</li>
+  <li>volvo</li>
+  <li>honda</li>
+</ol>
+<br>
+<p> cars you shouldn't buy </p>
+<ul>
+  <li>ford</li>
+  <li>volkswagen</li>
+  <li>dodge</li>
+  <li>hyundai</li>
+</ul>
+      <h4> car form </h4>
+ <form action=
+    "mailto:jbamford@csumb.edu"  enctype="multipart/form-data">
+   <fieldset>
+            <legend>what style is your car?</legend>
+            <label><input id="suv" type="radio" name="car style" value="suv" checked> suv</label>
+            <label><input id="sedan" type="radio" name="car style" value="sedan" checked> sedan</label>
+            <label><input id="coupe" type="radio" name="car style" value="coupe" checked> coupe</label>
+            <label><input id="truck" type="radio" name="car style" value="truck"> truck</label>
+          </fieldset>
+          <fieldset>
+            <legend>what features does your car have?</legend>
+            <input id="comfortable" type="checkbox" name="features" value="comfortable" checked> <label for="comfortable">comfortable</label>
+            <input id="goes-fast" type="checkbox" name="features" value="goes-fast"> <label for="goes-fast">goes fast</label>
+            <input id="looks-cool" type="checkbox" name="features" value="looks-cool"> <label for="looks-cool">looks cool</label>
+          </fieldset>
+   <fieldset>
+  <legend> what kind of car do you drive </legend>
+    <label>year <input type="text"  name="year" > </label> <br>
+    <label> make and model <input type="text"  name="make and model" > </label> <br>
+ <button> Send </button>
+</fieldset>
+</form>
 
-          <label
-            ><input
-              name="user-recommend"
-              value="not-sure"
-              type="radio"
-              class="input-radio"
-            >never</label
-          >
-        </div>
+<footer>made by jason bamford, 1st year</footer>
 
-        <div class="form-group">
-          <p>what country cars do you prefer</p>
-          <select id="most-like" name="mostLike" class="form-control" required>
-            <option disabled selected value>Select a country</option>
-            <option value="american">american</option>
-            <option value="japanese">japanese</option>
-            <option value="german">german</option>
-            <option value="other">other</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <p>
-            what features do you want in a car?
-            <span class="clue">(check all that apply)</span>
-          </p>
-
-          <label
-            ><input
-              name="prefer"
-              value="luxury-features"
-              type="checkbox"
-              class="input-checkbox"
-            >luxury features</label
-          >
-          <label>
-            <input
-              name="prefer"
-              value="fast-acceleration"
-              type="checkbox"
-              class="input-checkbox"
-            >fast acceleration</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="good-handling"
-              type="checkbox"
-              class="input-checkbox"
-            >good handling</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="comfortable-ride"
-              type="checkbox"
-              class="input-checkbox"
-            >comfortable ride</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="low-to-the-ground"
-              type="checkbox"
-              class="input-checkbox"
-            >low to the ground</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="lifted-above-other-cars"
-              type="checkbox"
-              class="input-checkbox"
-            >lifted above other cars</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="good-audio-system"
-              type="checkbox"
-              class="input-checkbox"
-            >good audio system</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="loud-exhaust"
-              type="checkbox"
-              class="input-checkbox"
-            >loud exhaust</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="forced-induction"
-              type="checkbox"
-              class="input-checkbox"
-            >forced induction</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="modern"
-              type="checkbox"
-              class="input-checkbox"
-            >modern</label
-          >
-          <label
-            ><input
-              name="prefer"
-              value="classic"
-              type="checkbox"
-              class="input-checkbox"
-            >classic</label
-          >
-        </div>
-
-        <div class="form-group">
-          <p>do you have a dream car?</p>
-          <textarea
-            id="comments"
-            class="input-textarea"
-            name="comment"
-            placeholder="type your dream car here"
-          ></textarea>
-        </div>
-
-        <div class="form-group">
-          <button type="submit" id="submit" class="submit-button">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+   </main>
 </body>
 </html>
