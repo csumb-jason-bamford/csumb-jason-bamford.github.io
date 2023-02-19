@@ -1,0 +1,74 @@
+<style>
+h1 {
+  font-size: 10vw;  
+  
+}
+h2 {
+  font-size: 5vw;  
+
+}
+h3 {
+  font-size: 5vw;
+  background: black;
+  opacity: .6
+}
+h4 {
+ font-size: 5vw;
+  background: black;
+  opacity: .6
+}
+body {
+  
+  background-image: url("https://images.unsplash.com/photo-1616361986889-3a182ffc7a23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aXBob25lJTIwY2FyfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  background-size: cover; 
+  color: white;
+  border: 6px double white;
+  text-align: center;  
+
+ }
+img {
+  border-radius: 20px;
+  border: 4px double white;
+  margin: 0 auto;
+  max-width: 100%;
+    height: auto
+
+}
+
+p {
+  text-align: center; 
+  background: black;
+  opacity: .6;
+ font-size: 3vw;
+}
+
+li {
+  opacity: .6;
+    background: black;
+  font-size: 3vw;
+}
+
+form {
+  background: black;
+    font-size: 3vw;
+}
+legend {
+  border: 3px double white;
+}
+
+label {
+  color: #add8e6;
+  
+}
+button {
+  color: #add8e6;
+  width: auto
+}
+footer {
+  border-radius: 20px;
+  border: 4px double white;
+  font-size: 3vw;
+
+}
+
+</style>
